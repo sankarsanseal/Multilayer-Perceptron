@@ -41,7 +41,7 @@ else if ($6 =="high")
 	safety=3;
 if( $7 == "unacc")
 	ylabel=1;
-else if ($6=="acc")
+else if ($7=="acc")
 	ylabel=2;
 else if ( $7 =="good")
 	ylabel=3;

@@ -1,51 +1,8 @@
 {
-if ($1 == "vhigh")
-	buy = 1;
-else if($1 == "high")
-	buy = 2;
-else if($1 == "med")
-	buy = 3;
-else if($1 =="low")
-	buy=4;
-if( $2 == "vhigh")
-	maint=1;
-else if ( $2 == "high")
-	maint=2;
-else if ( $2 == "med")
-	maint=3;
-else if ($2 =="low")
-	maint=4;
-if( $3 == "5more" )
-	doors=5;
-else if ($3 == "more")
-	doors=5;
-else 
-	doors=$3;
-if( $4 =="more" )
-	persons=5;
-else
-	persons=$4;
-
-if ( $5 =="small")
-	lug=1;
-else if ( $5 == "med" )
-	lug =2;
-else if ( $5 == "big")
-	lug=3;
-
-if ( $6 == "low")
-	safety=1;
-else if ($6 == "med")
-	safety=2;
-else if ($6 =="high")
-	safety=3;
-if( $7 == "unacc")
-	ylabel=1;
-else if ($6=="acc")
-	ylabel=2;
-else if ( $7 =="good")
-	ylabel=3;
-else if ( $7 == "vgood")
-	ylabel=4;
-print buy,maint,doors,persons,lug,safety,ylabel;
+print $1, ($2-11.03)/(14.83-11.03),
+		($3-0.74)/(5.8-0.74), ($4-1.36)/(3.23-1.36),
+		($5-10.6)/(30-10.6),($6-70)/(162-70), ($7-0.98)/(3.88-0.98),	($8-0.34)/(5.08-0.34),($9-0.13)/(0.66-0.13),($10-0.41)/(3.58-0.41),
+		($11-1.28)/(13-1.28),($12-0.48)/(1.71-0.48),
+		($13-1.27)/(4-1.27), ($14-278)/(1680-278)
+		;
 }	
